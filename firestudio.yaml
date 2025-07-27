@@ -1,0 +1,10 @@
+frontend:
+  path: frontend
+  build: npm run build
+  output: build
+
+backend:
+  path: backend
+  entry: wsgi.py
+  requirements: requirements.txt
+  port: 5001 

@@ -1,0 +1,379 @@
+/* EnrollStudentPage Styles */
+
+.enroll-root {
+  min-height: 100vh;
+  background: #f6f4ef;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.enroll-root > * {
+  font-family: inherit;
+}
+
+/* Navigation */
+.enroll-back-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  z-index: 10;
+  color: #2563eb;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: rgba(37, 99, 235, 0.1);
+}
+
+.enroll-back-btn:hover {
+  color: #1d4ed8;
+  background: rgba(37, 99, 235, 0.15);
+}
+
+/* Container Layout */
+.enroll-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  box-shadow: none;
+  border-radius: 0;
+  background: #E6E6E6;
+  flex-direction: row;
+}
+
+/* Left Column: Form */
+.enroll-form-column {
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 40px 40px 40px 20px;
+  background: #FFEFD7;
+}
+
+.enroll-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.enroll-page-image {
+  max-width: 500px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Right Column: Image */
+.enroll-image-column {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFEFD7;
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.enroll-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.enroll-page-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Form Card */
+.enroll-card {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 60px 50px 50px 50px;
+  min-width: 400px;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: none;
+  z-index: 1;
+}
+
+.enroll-logo {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #FF6B6B;
+  letter-spacing: 1px;
+  font-family: inherit;
+  margin-bottom: 8px;
+}
+
+.enroll-title {
+  color: #222;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-align: center;
+  font-family: inherit;
+}
+
+.enroll-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.enroll-label {
+  color: #555;
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+  font-family: inherit;
+}
+
+.enroll-input {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  background: #fff;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  margin-top: 4px;
+  transition: all 0.2s ease;
+  width: 100%;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.enroll-input:focus {
+  border-color: #FF6B6B;
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+}
+
+.enroll-select {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  background: #fff;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  margin-top: 4px;
+  transition: all 0.2s ease;
+  width: 100%;
+  font-family: inherit;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.enroll-select:focus {
+  border-color: #FF6B6B;
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+}
+
+.enroll-btn {
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF5252 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 16px rgba(255, 107, 107, 0.3);
+  font-family: inherit;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.enroll-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.enroll-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.enroll-back-btn {
+  background: none;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px 24px;
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  margin-top: 18px;
+}
+
+.enroll-back-btn:hover {
+  border-color: #FF6B6B;
+  color: #FF6B6B;
+  background: rgba(255, 107, 107, 0.05);
+}
+
+/* Input Row */
+.input-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+}
+
+.input-icon.valid {
+  color: #10B981;
+}
+
+.input-icon.invalid {
+  color: #EF4444;
+}
+
+.input-valid {
+  border-color: #10B981 !important;
+}
+
+.input-invalid {
+  border-color: #EF4444 !important;
+}
+
+.input-error {
+  color: #EF4444;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/* Success and Error Messages */
+.enroll-success {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 12px;
+  padding: 16px;
+  color: #065F46;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 8px;
+  animation: fadeIn 0.3s ease;
+}
+
+.enroll-error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 12px;
+  padding: 16px;
+  color: #991B1B;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 8px;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Spinner */
+.enroll-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .enroll-container {
+    flex-direction: column;
+  }
+  
+  .enroll-image-column {
+    display: none;
+  }
+  
+  .enroll-form-column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .enroll-card {
+    min-width: 360px;
+    max-width: 500px;
+    padding: 48px 40px 40px 40px;
+  }
+  
+  .enroll-title {
+    font-size: 1.6rem;
+  }
+  
+  .enroll-input,
+  .enroll-select {
+    font-size: 0.9rem;
+  }
+  
+  .enroll-btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .enroll-card {
+    min-width: 320px;
+    max-width: 100%;
+    padding: 32px 24px 24px 24px;
+  }
+  
+  .enroll-title {
+    font-size: 1.4rem;
+  }
+} 

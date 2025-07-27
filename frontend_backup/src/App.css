@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+  body, html {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .container, .main-content, .page, .app-root {
+    padding: 8px !important;
+    margin: 0 !important;
+    max-width: 100vw !important;
+    box-sizing: border-box;
+  }
+  h1, h2, h3, h4, h5 {
+    font-size: 1.2em !important;
+    word-break: break-word;
+  }
+  button, .btn, input, select, textarea {
+    font-size: 1em !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  img, video {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+  }
+  .flex-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .sidebar, .side-menu {
+    display: none !important;
+  }
+  /* Add more selectors as needed for your layout */
+
+  /* Header adjustments */
+  .header, .app-header, .navbar, .top-bar {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 8px 0 !important;
+    gap: 8px !important;
+  }
+
+  .logo, .app-logo, .brand {
+    font-size: 1.3em !important;
+    margin-bottom: 4px !important;
+  }
+
+  .login-buttons, .login-btns, .header-buttons {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 4px !important;
+  }
+
+  .login-buttons button, .login-btns button, .header-buttons button {
+    width: 100% !important;
+    font-size: 1em !important;
+  }
+
+  /* Feature card spacing */
+  .feature-card, .card, .info-card {
+    margin-top: 16px !important;
+  }
+
+  /* Footer adjustments */
+  .footer, .app-footer {
+    padding-bottom: 16px !important;
+    font-size: 0.9em !important;
+    text-align: center !important;
+  }
+
+  /* Reduce heading font size */
+  h1, h2, h3 {
+    font-size: 1.1em !important;
+  }
+}
