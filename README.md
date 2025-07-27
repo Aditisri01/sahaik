@@ -84,10 +84,10 @@ sahaik/
 
 ## 🚀 Deploy
 
-### Using Firestudio
+### Using Firebase
 ```bash
-npm install -g @firestudio/cli
-firestudio deploy
+npm install -g @firebase/cli
+firebase deploy
 ```
 
 ### Manual Deployment
@@ -101,10 +101,6 @@ firestudio deploy
 2. Create a feature branch
 3. Make changes
 4. Submit a pull request
-
-## 📄 License
-
-MIT License
 
 ## 🆘 Support
 
